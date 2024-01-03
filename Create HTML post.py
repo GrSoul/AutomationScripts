@@ -1,6 +1,5 @@
-## Δημιουργία: Χρήστος Καρασούλης. Έκδοση 0.1
-## Changelog: Προσθήκη επιλογής element από λίστα.
-## TODO: 
+#HTML post creator for any website
+#Add you post page website code after the 'DOCTYPE' section. Mind the tags for page title, paragrapf etc.
 
 import textwrap
 
