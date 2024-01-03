@@ -23,3 +23,8 @@ Run with 'Alt+F8'
 HTML post creator for any website
 
 Add your post page code after the 'DOCTYPE' section for your website. Mind the tags for page title, paragrapf etc.
+
+# ChatGPT_on_CMD.py
+Speak to ChatGPT from the comfort of your CMD.
+
+---
