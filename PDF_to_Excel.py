@@ -1,6 +1,8 @@
-#Μεταφορά δεδομένων από PDF σε excel.
-#Ονομάζουμε το τιμολόγιό μας σε 'invoice.pdf' και το βάζουμε στο φάκελο του py
-#Βάζουμε RegEx στις παρενθέσεις για να αναγνωρίζει όλα τα τιμολόγια του προμηθευτή
+#Transfer data (from an invoice for example) from PDF to excel.
+
+#Name our file 'invoice.pdf' and we put it in the same folder as the script.
+#Use our RegEx to accomodate our needs.
+#Run the script and it will extract them to an excel file named 'invoices.xlsx'.
 
 from PyPDF2 import PdfReader
 import re
@@ -15,7 +17,7 @@ for page in pdf.pages:
     text += page.extract_text()
 
 # Use regular expression or string matching to find invoice number and amount
-invoice_number = re.findall(r'INVOICE NO. (G2M-23-24-E-060)', text)[0]
+invoice_number = re.findall(r'INVOICE NO. (XXX-23-24-E-060)', text)[0]
 invoice_date = re.findall(r'INVOICE DATE (26‐Dec‐2023)', text)[0]
 total_amount = re.findall(r'Total EX‐WORKS Price : (€ 1,500.00)', text)[0]
 
