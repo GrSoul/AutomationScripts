@@ -1,0 +1,220 @@
+# VBA code to print labels from excel
+
+Sub PrintCopies()
+    Dim printSheet As Worksheet
+    Dim valueSheet As Worksheet
+    Dim printArea As Range
+    Dim copiesCell As Range
+    Dim copies As Integer
+
+    If Application.Dialogs(xlDialogPrinterSetup).Show = True Then
+    
+    'Set the worksheets
+    Set printSheet = ThisWorkbook.Sheets("Print")
+    Set valueSheet = ThisWorkbook.Sheets("Barcodes")
+
+    'Print Area 1
+    Set printArea = printSheet.Range("A1:E6")
+    Set copiesCell = valueSheet.Range("F2")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 2
+    Set printArea = printSheet.Range("G1:K6")
+    Set copiesCell = valueSheet.Range("F3")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 3
+    Set printArea = printSheet.Range("M1:Q6")
+    Set copiesCell = valueSheet.Range("F4")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 4
+    Set printArea = printSheet.Range("S1:W6")
+    Set copiesCell = valueSheet.Range("F5")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 5
+    Set printArea = printSheet.Range("A8:E13")
+    Set copiesCell = valueSheet.Range("F6")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 6
+    Set printArea = printSheet.Range("G8:K13")
+    Set copiesCell = valueSheet.Range("F7")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 7
+    Set printArea = printSheet.Range("M8:Q13")
+    Set copiesCell = valueSheet.Range("F8")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 8
+    Set printArea = printSheet.Range("S8:W13")
+    Set copiesCell = valueSheet.Range("F9")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 9
+    Set printArea = printSheet.Range("A15:E20")
+    Set copiesCell = valueSheet.Range("F10")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 10
+    Set printArea = printSheet.Range("G15:K20")
+    Set copiesCell = valueSheet.Range("F11")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 11
+    Set printArea = printSheet.Range("M15:Q20")
+    Set copiesCell = valueSheet.Range("F12")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 12
+    Set printArea = printSheet.Range("S15:W20")
+    Set copiesCell = valueSheet.Range("F13")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 13
+    Set printArea = printSheet.Range("A22:E27")
+    Set copiesCell = valueSheet.Range("F14")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 14
+    Set printArea = printSheet.Range("G22:K27")
+    Set copiesCell = valueSheet.Range("F15")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 15
+    Set printArea = printSheet.Range("M22:Q27")
+    Set copiesCell = valueSheet.Range("F16")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 16
+    Set printArea = printSheet.Range("S22:W27")
+    Set copiesCell = valueSheet.Range("F17")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+
+    'Print Area 17
+    Set printArea = printSheet.Range("A29:E34")
+    Set copiesCell = valueSheet.Range("F18")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+    
+    'Print Area 18
+    Set printArea = printSheet.Range("G29:K34")
+    Set copiesCell = valueSheet.Range("F19")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+    
+    'Print Area 19
+    Set printArea = printSheet.Range("M29:Q34")
+    Set copiesCell = valueSheet.Range("F20")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+    
+    'Print Area 20
+    Set printArea = printSheet.Range("S29:W34")
+    Set copiesCell = valueSheet.Range("F21")
+    copies = copiesCell.Value
+
+    printArea.PrintOut copies:=copies
+    
+    Set printArea = Nothing
+    Set copiesCell = Nothing
+    Set printSheet = Nothing
+    Set valueSheet = Nothing
+            
+    Else
+      MsgBox "Ç åêôýðùóç áêõñþèçêå"
+    End If
+    
+'    With ActiveSheet.PageSetup
+        ' Set orientation as portrait
+'        .Orientation = xlPortrait
+
+        ' Set print area
+'        .printArea = "A1:C10"
+
+        ' Set rows and columns to repeat on each printed page
+'        .PrintTitleRows = "$1:$1"
+'        .PrintTitleColumns = "$A:$A"
+
+        ' Set page margins (in points)
+'        .LeftMargin = Application.InchesToPoints(0.7)
+'        .RightMargin = Application.InchesToPoints(0.7)
+'        .TopMargin = Application.InchesToPoints(0.75)
+'        .BottomMargin = Application.InchesToPoints(0.75)
+
+        ' Set header and footer margins (in points)
+'        .HeaderMargin = Application.InchesToPoints(0.3)
+'        .FooterMargin = Application.InchesToPoints(0.3)
+
+        ' Set content of headers and footers
+'        .CenterHeader = "Center Header"
+'        .CenterFooter = "Center Footer"
+'        .LeftHeader = "Left Header"
+'        .LeftFooter = "Left Footer"
+'        .RightHeader = "Right Header"
+'        .RightFooter = "Right Footer"
+
+        ' Scale the sheet size for printing
+'        .FitToPagesWide = 1
+'        .FitToPagesTall = 1
+
+        ' Print row and column headings
+'        .PrintHeadings = True
+
+        ' Print cell gridlines
+'        .PrintGridlines = True
+
+        ' Set how to print comments
+'        .PrintComments = xlPrintNoComments
+
+        ' Set print quality
+'        .PrintQuality = 600
+
+        ' Set order to print pages
+'        .Order = xlDownThenOver
+
+        ' Print in black and white
+'        .BlackAndWhite = False
+
+        ' Set zoom level for print preview
+'        .Zoom = 100
+'    End With
+    
+End Sub
