@@ -1,4 +1,4 @@
-# PythonAutomationScripts
+# AutomationScripts
 
 ---
 
