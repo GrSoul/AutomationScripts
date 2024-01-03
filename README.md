@@ -10,3 +10,11 @@ Use our RegEx to accomodate our needs.
 Run the script and it will extract them to an excel file named 'invoices.xlsx'.
 
 ---
+
+# VBA_Print_Labels_Excel
+Prints 20 labels from a set of equal printing areas of an excel file.
+
+Open an excel file and press 'Alt+F11' to add the code.
+Run with 'Alt+F8'
+
+---
