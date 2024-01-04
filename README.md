@@ -15,6 +15,9 @@
 ## PDF_to_MP3
   Converts 'book.pdf' to MP3 using the detected language and voice.
 
+## Scrape_Website
+  Scrapes website headings and paragraphs.
+
 ## VBA_Print_Labels_Excel
   Prints 20 labels from a set of equal printing areas of an excel file.
   Open an excel file and press 'Alt+F11' to add the code.
